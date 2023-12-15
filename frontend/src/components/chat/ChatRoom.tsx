@@ -132,7 +132,7 @@ const ChatRoom = ({ roomNum }: { roomNum: number | undefined }) => {
   useEffect(() => {
     // 채팅 환경설정
     const socket = new SockJS(
-      'http://ec2-15-165-55-217.ap-northeast-2.compute.amazonaws.com/wss'
+      'http://ec2-15-165-55-217.ap-northeast-2.compute.amazonaws.com/wsss'
     )
     const stompClient = StompJs.over(socket)
     setStompClientstate(stompClient)
